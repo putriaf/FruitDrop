@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -295,7 +295,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1020813674}
-        m_MethodName: 
+        m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 271989080}
   - component: {fileID: 271989079}
   - component: {fileID: 271989078}
+  - component: {fileID: 271989081}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -424,15 +425,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020813673}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1020813674}
+        m_MethodName: StartGame
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: GameScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &271989079
@@ -472,6 +473,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271989076}
   m_CullTransparentMesh: 0
+--- !u!114 &271989081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271989076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11f37fbc24c25b4eb98ab6d10a93a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &684234023
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +580,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020813673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03724c7fbc4a9a4ab13d51da9ff8976, type: 3}
+  m_Script: {fileID: 11500000, guid: d11f37fbc24c25b4eb98ab6d10a93a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1020813675

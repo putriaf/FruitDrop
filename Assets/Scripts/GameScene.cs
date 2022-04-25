@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class GameScene : MonoBehaviour
 {
     public void ExitButton() {
         Application.Quit();
-        Debug.log("Game closed");
+        //Debug.log("Game closed");
     }
 
     public void StartGame() {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("GameScene");
 
     }
 
