@@ -12,12 +12,10 @@ GameObject:
   - component: {fileID: 739093292316332666}
   - component: {fileID: 3289103440398214832}
   - component: {fileID: 4207676547597716988}
-  - component: {fileID: 4207676547597716989}
-  - component: {fileID: 3689301995832700932}
   - component: {fileID: 5206193936049038531}
-  - component: {fileID: -4667417884579459473}
   - component: {fileID: -5441084787765495028}
   - component: {fileID: 5867258378665940051}
+  - component: {fileID: 7510478402586215163}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Fruit
@@ -102,32 +100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
---- !u!65 &4207676547597716989
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937767128741758821}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.016979069, y: 0.016979065, z: 0.032163512}
-  m_Center: {x: 0.000014117453, y: 0.0000000013969836, z: 0.009984061}
---- !u!135 &3689301995832700932
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937767128741758821}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.016081756
-  m_Center: {x: 0.000014117453, y: 0.0000000013969836, z: 0.009984061}
 --- !u!1971053207 &5206193936049038531
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -175,19 +147,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 1048576, y: 1048576, z: 1048576}
---- !u!135 &-4667417884579459473
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937767128741758821}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.016081756
-  m_Center: {x: 0.000014117453, y: 0.0000000013969836, z: 0.009984061}
 --- !u!65 &-5441084787765495028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -196,10 +155,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3937767128741758821}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.016979069, y: 0.016979065, z: 0.032163512}
+  m_Size: {x: 0.00097907, y: 0.00097906, z: 0.00016351}
   m_Center: {x: 0.000014117453, y: 0.0000000013969836, z: 0.009984061}
 --- !u!114 &5867258378665940051
 MonoBehaviour:
@@ -214,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 1
+--- !u!135 &7510478402586215163
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937767128741758821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.016081756
+  m_Center: {x: 0.000014117453, y: 0.0000000013969836, z: 0.009984061}

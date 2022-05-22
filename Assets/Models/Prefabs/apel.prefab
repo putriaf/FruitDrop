@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 563853978694046845}
   - component: {fileID: 3493928689080523736}
   - component: {fileID: 1700138444763705106}
-  - component: {fileID: 7237110932533282625}
   - component: {fileID: 7243575785083795890}
   - component: {fileID: 8820871674628119566}
   - component: {fileID: -5581421661220016894}
   - component: {fileID: -644384533811863354}
+  - component: {fileID: 5548558129466114714}
   m_Layer: 0
   m_Name: apel
   m_TagString: Fruit
@@ -84,19 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &7237110932533282625
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907728866826489543}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0079336595
-  m_Center: {x: 9.313226e-10, y: -4.656612e-10, z: 0.0011849375}
 --- !u!54 &7243575785083795890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -171,7 +158,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.015867319, y: 0.015867312, z: 0.014572243}
+  m_Size: {x: 0.00086732, y: 0.00086731, z: 0.00057224}
   m_Center: {x: 9.313226e-10, y: -4.656612e-10, z: 0.0011849375}
 --- !u!114 &-644384533811863354
 MonoBehaviour:
@@ -186,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 1
+--- !u!135 &5548558129466114714
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907728866826489543}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.0079336595
+  m_Center: {x: 9.313226e-10, y: -4.656612e-10, z: 0.0011849375}
