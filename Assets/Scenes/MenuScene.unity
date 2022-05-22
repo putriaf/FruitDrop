@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -224,7 +224,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene
+          m_StringArgument: About
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &136408899
@@ -354,7 +354,6 @@ GameObject:
   - component: {fileID: 173608892}
   - component: {fileID: 173608891}
   - component: {fileID: 173608890}
-  - component: {fileID: 173608889}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -382,18 +381,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000019073, y: -168}
   m_SizeDelta: {x: 180, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &173608889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173608887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03724c7fbc4a9a4ab13d51da9ff8976, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &173608890
 MonoBehaviour:
   m_ObjectHideFlags: 0
