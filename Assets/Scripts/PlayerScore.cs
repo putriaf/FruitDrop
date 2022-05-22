@@ -20,7 +20,6 @@ public class PlayerScore : MonoBehaviour {
         if(target.tag == "Fruit") {
             target.gameObject.SetActive(false);
             score += 1;
-            Debug.Log(score);
             scoreText.text = score.ToString();
             Destroy(target.gameObject);
         }
