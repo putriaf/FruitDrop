@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collector : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class Collector : MonoBehaviour
     {
         lifeText = GameObject.Find("LifeText").GetComponent<Text>();
         lifeText.text = "5";
-        Debug.Log(lives);
     }
 
     // Start is called before the first frame update
@@ -35,7 +35,13 @@ public class Collector : MonoBehaviour
             lives -= 1;
             lifeText.text = lives.ToString();
         }
+        if(lives == 0) {
+            StartCoroutine(RestartGame());
+        }
     }
 
-
+    IEnumerator RestartGame() {
+        yield return new WaitForSecondsRealtime(2f);
+        SceneManager.LoadScene("GameOver");
+    }
 }

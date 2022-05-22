@@ -8,7 +8,7 @@ public class PlayerScore : MonoBehaviour {
     //private TextMeshProUGUI scoreText;
     private Text scoreText;
 
-    private int score = 0;
+    public int score = 0;
 
     void Awake() {
         //scoreText = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
