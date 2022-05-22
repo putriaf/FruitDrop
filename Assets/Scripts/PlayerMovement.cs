@@ -16,22 +16,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     	//float xMove = Input.GetAxisRaw("Horizontal"); // d key changes value to 1, a key changes value to -1
- 	//float zMove = Input.GetAxisRaw("Vertical"); // w key changes value to 1, s key changes value to -1
-	//rb.velocity = new Vector3(xMove, rb.velocity.y, zMove) * speed; // Creates velocity in direction of value equal to keypress (WASD). rb.velocity.y deals with falling + jumping by setting velocity to y.    
-	//rb.velocity = new Vector2(xMove, rb.velocity.y) * speed;
-	//float h = Input.GetAxisRaw("Horizontal");
-    	//Vector2 movement = new Vector2(h, rb.velocity.y);
-    	//rb.velocity = Vector2.Lerp(rb.velocity, movement, LerpConstant);
+    
 	float v = Input.GetAxis("Horizontal");
-     	rb.MovePosition(transform.position + transform.right * v * speed);
-	//rb.velocity = new Vector2 (Input.GetAxisRaw ("Horizontal") * speed, rb.velocity.y);
+    rb.MovePosition(transform.position + transform.right * v * speed);
+	// float h = Input.GetAxis("Horizontal") * speed;
+               
+    // rb.transform.Translate(h,0,0);
 	
     }
-
-	// void FixedUpdate() {
-	// 	Vector2 vel = rb.velocity;
-	// 	vel.x = Input.GetAxis("hHorizontal") * speed;
-	// 	rb.velocity = vel;
-	// }
 }

@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 4545277422549988752}
   - component: {fileID: 1797190178555625818}
   - component: {fileID: 6050663501553663264}
-  - component: {fileID: 4196225729756104306}
   - component: {fileID: 192864334646129567}
-  - component: {fileID: -8928718652068405957}
   - component: {fileID: 2975791969847175451}
   - component: {fileID: 6655153633886563622}
+  - component: {fileID: -233051862667015069}
   m_Layer: 0
   m_Name: PirONLY
   m_TagString: Fruit
@@ -101,19 +100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &4196225729756104306
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283755923180003471}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0093448255
-  m_Center: {x: -0.000041850843, y: -0.000084090265, z: -0.00046216827}
 --- !u!1971053207 &192864334646129567
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -161,19 +147,6 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 1048576, y: 1048576, z: 1048576}
---- !u!135 &-8928718652068405957
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283755923180003471}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0093448255
-  m_Center: {x: -0.000041850843, y: -0.000084090265, z: -0.00046216827}
 --- !u!65 &2975791969847175451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -182,10 +155,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283755923180003471}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0151934, y: 0.015227283, z: 0.018689651}
+  m_Size: {x: 0.0001934, y: 0.00022728, z: 0.00068965}
   m_Center: {x: -0.000041850843, y: -0.000084090265, z: -0.00046216827}
 --- !u!114 &6655153633886563622
 MonoBehaviour:
@@ -200,3 +173,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 1
+--- !u!135 &-233051862667015069
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283755923180003471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.0093448255
+  m_Center: {x: -0.000041850843, y: -0.000084090265, z: -0.00046216827}
