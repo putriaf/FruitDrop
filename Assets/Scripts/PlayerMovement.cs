@@ -28,4 +28,10 @@ public class PlayerMovement : MonoBehaviour
 	//rb.velocity = new Vector2 (Input.GetAxisRaw ("Horizontal") * speed, rb.velocity.y);
 	
     }
+
+	// void FixedUpdate() {
+	// 	Vector2 vel = rb.velocity;
+	// 	vel.x = Input.GetAxis("hHorizontal") * speed;
+	// 	rb.velocity = vel;
+	// }
 }
