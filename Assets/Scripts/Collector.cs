@@ -31,6 +31,7 @@ public class Collector : MonoBehaviour
     void OnTriggerEnter(Collider target) {
         
         if(target.tag == "Fruit") {
+            Destroy(target.gameObject);
             target.gameObject.SetActive(false);
             lives -= 1;
             lifeText.text = lives.ToString();
@@ -41,7 +42,7 @@ public class Collector : MonoBehaviour
     }
 
     IEnumerator RestartGame() {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(0f);
         SceneManager.LoadScene("GameOver");
     }
 }
