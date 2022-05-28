@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void ExitButton() {
         Application.Quit();
-        //Debug.log("Game closed");
+        //Debug.Log("Game closed");
     }
 
     public void StartGame(string sceneName) {

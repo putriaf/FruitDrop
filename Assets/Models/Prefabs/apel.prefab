@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8820871674628119566}
   - component: {fileID: 8873212767057411384}
   - component: {fileID: -644384533811863354}
+  - component: {fileID: -6129799426056151203}
   m_Layer: 0
   m_Name: apel
   m_TagString: Fruit
@@ -172,3 +173,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 1
+--- !u!114 &-6129799426056151203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907728866826489543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c484fcdfc9ec047bc2825afe9a6e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

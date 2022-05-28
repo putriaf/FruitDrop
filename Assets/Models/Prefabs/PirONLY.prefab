@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 192864334646129567}
   - component: {fileID: 3156997738381699625}
   - component: {fileID: 6655153633886563622}
+  - component: {fileID: -9222200682848550404}
   m_Layer: 0
   m_Name: PirONLY
   m_TagString: Fruit
@@ -172,3 +173,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 1
+--- !u!114 &-9222200682848550404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283755923180003471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c484fcdfc9ec047bc2825afe9a6e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
