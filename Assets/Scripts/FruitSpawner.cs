@@ -9,7 +9,9 @@ public class FruitSpawner : MonoBehaviour
 	private BoxCollider col;
 	float x1, x2;
 	private static bool isPaused;
+	private static bool isOver;
 	// [SerializeField] GameObject pauseMenu;
+	public Collector gameover;
 	public PauseMenu pause;
 
     // Start is called before the first frame update
@@ -26,12 +28,13 @@ public class FruitSpawner : MonoBehaviour
     void Start()
     {
 			isPaused = pause.GameIsPaused;
+			isOver = gameover.GameIsOver;
 		// if(isPaused == false)
         	StartCoroutine (SpawnFruit(1f));
     }
 	IEnumerator SpawnFruit(float time) {
 			yield return new WaitForSecondsRealtime (time);
-		if(pause.GameIsPaused == false){
+		if(pause.GameIsPaused == false && gameover.GameIsOver == false){
 			
 			Vector3 temp = transform.position;
 			temp.x = Random.Range (x1, x2);
