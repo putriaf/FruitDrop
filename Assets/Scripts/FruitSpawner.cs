@@ -9,6 +9,8 @@ public class FruitSpawner : MonoBehaviour
 	private BoxCollider col;
 	float x1, x2;
 	private static bool isPaused;
+	// [SerializeField] GameObject pauseMenu;
+	public PauseMenu pause;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,18 +25,20 @@ public class FruitSpawner : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-		// isPaused = PauseMenu.GameIsPaused;
+			isPaused = pause.GameIsPaused;
 		// if(isPaused == false)
         	StartCoroutine (SpawnFruit(1f));
     }
 	IEnumerator SpawnFruit(float time) {
-		yield return new WaitForSecondsRealtime (time);
+			yield return new WaitForSecondsRealtime (time);
+		if(pause.GameIsPaused == false){
+			
+			Vector3 temp = transform.position;
+			temp.x = Random.Range (x1, x2);
+
+			Instantiate (fruits[Random.Range(0, fruits.Length)], temp, Quaternion.identity);
+		}
+			StartCoroutine (SpawnFruit(Random.Range(1f, 2f)));
 		
-		Vector3 temp = transform.position;
-		temp.x = Random.Range (x1, x2);
-
-		Instantiate (fruits[Random.Range(0, fruits.Length)], temp, Quaternion.identity);
-
-		StartCoroutine (SpawnFruit(Random.Range(1f, 2f)));
 	}
 }
