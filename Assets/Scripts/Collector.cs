@@ -7,6 +7,12 @@ using UnityEngine.SceneManagement;
 public class Collector : MonoBehaviour
 {
     private Text lifeText;
+    [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject mainAttribute;
+
+    private Text scoreText;
+    private int score;
+    private Text finalScoreText;
 
     private int lives = 5;
 
@@ -44,6 +50,12 @@ public class Collector : MonoBehaviour
 
     IEnumerator RestartGame() {
         yield return new WaitForSecondsRealtime(0f);
-        SceneManager.LoadScene("GameOver");
+        //SceneManager.LoadScene("GameOver");
+        gameOver.SetActive(true);
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        score =  int.Parse(scoreText.text);
+        finalScoreText = GameObject.Find("FinalScoreText").GetComponent<Text>();
+        finalScoreText.text = score.ToString();
+        mainAttribute.SetActive(false);
     }
 }
