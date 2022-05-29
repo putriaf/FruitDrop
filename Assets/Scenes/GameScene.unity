@@ -1718,6 +1718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 1915267409}
   mainAttribute: {fileID: 1360408349}
+  GameIsOver: 0
 --- !u!1 &978684003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2245,7 @@ MonoBehaviour:
   - {fileID: 907728866826489543, guid: 0237f44c9eda992478190fd26c66b795, type: 3}
   - {fileID: 3937767128741758821, guid: 7842db5b8b24c464fa015f4f2e46fedd, type: 3}
   - {fileID: 283755923180003471, guid: f8e6713a0cd58a145a0723949cb6a74d, type: 3}
+  gameover: {fileID: 1389704761}
   pause: {fileID: 818966702}
 --- !u!65 &1196496358
 BoxCollider:
@@ -3072,6 +3074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 1915267409}
   mainAttribute: {fileID: 1360408349}
+  GameIsOver: 0
 --- !u!1 &1400236138
 GameObject:
   m_ObjectHideFlags: 0
