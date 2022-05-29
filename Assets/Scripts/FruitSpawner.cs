@@ -8,6 +8,7 @@ public class FruitSpawner : MonoBehaviour
 	private GameObject[] fruits;
 	private BoxCollider col;
 	float x1, x2;
+	private static bool isPaused;
 
     // Start is called before the first frame update
     void Awake()
@@ -22,7 +23,9 @@ public class FruitSpawner : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        StartCoroutine (SpawnFruit(1f));
+		// isPaused = PauseMenu.GameIsPaused;
+		// if(isPaused == false)
+        	StartCoroutine (SpawnFruit(1f));
     }
 	IEnumerator SpawnFruit(float time) {
 		yield return new WaitForSecondsRealtime (time);

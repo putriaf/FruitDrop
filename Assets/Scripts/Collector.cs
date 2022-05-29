@@ -34,6 +34,7 @@ public class Collector : MonoBehaviour
             Destroy(target.gameObject);
             target.gameObject.SetActive(false);
             lives -= 1;
+            Destroy(GameObject.Find("Nyawa"));
             lifeText.text = lives.ToString();
         }
         if(lives == 0) {
