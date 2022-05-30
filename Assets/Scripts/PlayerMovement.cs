@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             float horizontal = touch.deltaPosition.x;
             transform.position +=
-                new Vector3(0f, 0f, horizontal * (worldWidth / screenWidth) * ratioScreenToWorld);
+                new Vector3(horizontal * (worldWidth / screenWidth) * ratioScreenToWorld, 0f, 0f);
             //clamp, or whatever
         }
     }
